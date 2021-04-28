@@ -3,11 +3,9 @@ package com.grupo4.demo.models.entity;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -17,13 +15,8 @@ public class Articulo implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long idArticulo;
 	
-	@ManyToOne(fetch = FetchType.LAZY)
-	private Categoria categoria;
-	
-	@ManyToOne(fetch = FetchType.LAZY)
-	private Proveedores proveedores;
 	
 	private String codigoArticulo;
 	private String nombre;
@@ -32,39 +25,15 @@ public class Articulo implements Serializable{
 	private String estado;
 	
 	
-	
-	public Long getId() {
-		return id;
+
+	public Long getIdArticulo() {
+		return idArticulo;
 	}
 
 
 
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-
-
-	public Categoria getCategoria() {
-		return categoria;
-	}
-
-
-
-	public void setCategoria(Categoria categoria) {
-		this.categoria = categoria;
-	}
-
-
-
-	public Proveedores getProveedores() {
-		return proveedores;
-	}
-
-
-
-	public void setProveedores(Proveedores proveedores) {
-		this.proveedores = proveedores;
+	public void setIdArticulo(Long idArticulo) {
+		this.idArticulo = idArticulo;
 	}
 
 

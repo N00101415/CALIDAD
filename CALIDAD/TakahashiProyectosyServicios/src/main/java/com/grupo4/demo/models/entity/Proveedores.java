@@ -14,7 +14,7 @@ public class Proveedores implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long idProveedores;
 	private String codigoProveedor;
 	private String razonSocial;
 	private String direccion;
@@ -22,16 +22,24 @@ public class Proveedores implements Serializable {
 	
 	
 	
-	public Long getId() {
-		return id;
+	public Long getIdProveedores() {
+		return idProveedores;
 	}
 
 
 
 
-	public void setId(Long id) {
-		this.id = id;
+
+
+
+
+	public void setIdProveedores(Long idProveedores) {
+		this.idProveedores = idProveedores;
 	}
+
+
+
+
 
 
 
@@ -43,9 +51,17 @@ public class Proveedores implements Serializable {
 
 
 
+
+
+
+
 	public void setCodigoProveedor(String codigoProveedor) {
 		this.codigoProveedor = codigoProveedor;
 	}
+
+
+
+
 
 
 
@@ -57,9 +73,17 @@ public class Proveedores implements Serializable {
 
 
 
+
+
+
+
 	public void setRazonSocial(String razonSocial) {
 		this.razonSocial = razonSocial;
 	}
+
+
+
+
 
 
 
@@ -71,9 +95,17 @@ public class Proveedores implements Serializable {
 
 
 
+
+
+
+
 	public void setDireccion(String direccion) {
 		this.direccion = direccion;
 	}
+
+
+
+
 
 
 
@@ -85,9 +117,17 @@ public class Proveedores implements Serializable {
 
 
 
+
+
+
+
 	public void setRUC(String rUC) {
 		RUC = rUC;
 	}
+
+
+
+
 
 
 

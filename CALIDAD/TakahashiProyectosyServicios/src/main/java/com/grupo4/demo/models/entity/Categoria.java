@@ -15,22 +15,29 @@ public class Categoria implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long idCategoria;
 	private String codigo;
 	private String nombre;
 	private String tipoArticulo;
 	
-	
-	
-	public Long getId() {
-		return id;
+
+	public Long getIdCategoria() {
+		return idCategoria;
 	}
 
 
 
-	public void setId(Long id) {
-		this.id = id;
+
+
+
+
+	public void setIdCategoria(Long idCategoria) {
+		this.idCategoria = idCategoria;
 	}
+
+
+
+
 
 
 
@@ -40,9 +47,17 @@ public class Categoria implements Serializable{
 
 
 
+
+
+
+
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
+
+
+
+
 
 
 
@@ -52,9 +67,17 @@ public class Categoria implements Serializable{
 
 
 
+
+
+
+
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
+
+
+
 
 
 
@@ -64,9 +87,17 @@ public class Categoria implements Serializable{
 
 
 
+
+
+
+
 	public void setTipoArticulo(String tipoArticulo) {
 		this.tipoArticulo = tipoArticulo;
 	}
+
+
+
+
 
 
 
