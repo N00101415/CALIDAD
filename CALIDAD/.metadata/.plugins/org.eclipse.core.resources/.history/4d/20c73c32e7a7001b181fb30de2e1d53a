@@ -1,0 +1,5 @@
+package com.grupo4.demo.models.entity;
+
+public class Proveedores {
+
+}
